@@ -5,7 +5,7 @@ import android.os.Bundle;
 /**
  * Created by zw on 2015/10/31.
  */
-public interface IView {
+public interface IViewAble {
 
     void success(Bundle bundle);
 

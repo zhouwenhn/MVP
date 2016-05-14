@@ -1,11 +1,11 @@
-package biz;
+package model.biz;
 
 import android.os.Bundle;
 
 /**
  * Created by zw on 2015/10/31.
  */
-public class UserBiz implements IUser{
+public class UserBiz implements IUserAble {
 
     public UserBiz(){
     }

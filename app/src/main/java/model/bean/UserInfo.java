@@ -1,4 +1,4 @@
-package bean;
+package model.bean;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -6,25 +6,25 @@ import android.os.Parcelable;
 /**
  * Created by zw on 2015/10/31.
  */
-public class User implements Parcelable{
+public class UserInfo implements Parcelable{
     private String userName;
 
     private String passWord;
 
-    protected User(Parcel in) {
+    protected UserInfo(Parcel in) {
         userName = in.readString();
         passWord = in.readString();
     }
 
-    public static final Creator<User> CREATOR = new Creator<User>() {
+    public static final Creator<UserInfo> CREATOR = new Creator<UserInfo>() {
         @Override
-        public User createFromParcel(Parcel in) {
-            return new User(in);
+        public UserInfo createFromParcel(Parcel in) {
+            return new UserInfo(in);
         }
 
         @Override
-        public User[] newArray(int size) {
-            return new User[size];
+        public UserInfo[] newArray(int size) {
+            return new UserInfo[size];
         }
     };
 

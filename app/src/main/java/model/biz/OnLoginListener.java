@@ -1,4 +1,4 @@
-package biz;
+package model.biz;
 
 import android.os.Bundle;
 

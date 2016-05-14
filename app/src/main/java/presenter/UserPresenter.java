@@ -2,20 +2,20 @@ package presenter;
 
 import android.os.Bundle;
 
-import biz.UserBiz;
-import biz.OnLoginListener;
-import view.IView;
+import model.biz.OnLoginListener;
+import model.biz.UserBiz;
+import view.IViewAble;
 
 /**
  * Created by zw on 2015/10/31.
  */
 public class UserPresenter implements OnLoginListener {
 
-    private IView mViewCallBack;
+    private IViewAble mViewCallBack;
 
     private UserBiz mUserBiz;
 
-    public UserPresenter(IView viewCallBack){
+    public UserPresenter(IViewAble viewCallBack){
         mViewCallBack = viewCallBack;
         mUserBiz = new UserBiz();
         mViewCallBack.showLoadView();
